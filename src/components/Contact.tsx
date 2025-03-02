@@ -37,8 +37,8 @@ const Contact: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 opacity-0 transition-opacity duration-1000">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in <span className="text-amber-500">Touch</span></h2>
-          <div className="w-20 h-1 bg-amber-500 mx-auto"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in <span className="text-[#FF6347]">Touch</span></h2>
+          <div className="w-20 h-1 bg-[#FF6347] mx-auto"></div>
           <p className="mt-8 max-w-3xl mx-auto text-gray-300 text-lg">
             Ready to bring your story to life? Contact us today to discuss your project and how we can help you connect with your audience.
           </p>
@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-10">
           <div className="space-y-8">
             <div className="flex items-start">
-              <div className="bg-amber-500 p-3 rounded-lg mr-4">
+              <div className="bg-[#FF6347] p-3 rounded-lg mr-4">
                 <Mail className="text-black" size={24} />
               </div>
               <div>
@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="flex items-start">
-              <div className="bg-amber-500 p-3 rounded-lg mr-4">
+              <div className="bg-[#FF6347] p-3 rounded-lg mr-4">
                 <Phone className="text-black" size={24} />
               </div>
               <div>
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
               <input 
                 type="text" 
                 id="name" 
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF6347]"
                 placeholder="John Doe"
               />
             </div>
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
               <input 
                 type="email" 
                 id="email" 
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF6347]"
                 placeholder="john@example.com"
               />
             </div>
@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
               <input 
                 type="text" 
                 id="subject" 
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF6347]"
                 placeholder="Project Inquiry"
               />
             </div>
@@ -119,14 +119,14 @@ const Contact: React.FC = () => {
               <textarea 
                 id="message" 
                 rows={5}
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#FF6347]"
                 placeholder="Tell us about your project..."
               ></textarea>
             </div>
             
             <button 
               type="submit"
-              className="w-full bg-amber-500 text-black font-medium py-3 rounded-lg hover:bg-amber-400 transition-colors duration-300"
+              className="w-full bg-[#FF6347] text-black font-medium py-3 rounded-lg hover:bg-amber-400 transition-colors duration-300"
             >
               Send Message
             </button>

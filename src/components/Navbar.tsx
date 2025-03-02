@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from '../assets/logo.svg';
 
 interface NavbarProps {
   isMenuOpen: boolean;
@@ -41,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen, activeSectio
             scrollToSection('home');
           }}
         >
-          <span className="text-amber-500">BOBOTH</span> STUDIOS
+          <img src={Logo} alt="Logo" className="max-h-[20px] h-10" />
         </a>
 
         {/* Desktop Navigation */}
@@ -50,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen, activeSectio
             <a
               key={item}
               href={`#${item}`}
-              className={`text-sm uppercase tracking-wider font-medium transition-colors hover:text-amber-500 ${activeSection === item ? 'text-amber-500' : 'text-white'}`}
+              className={`text-sm uppercase tracking-wider font-medium transition-colors hover:text-[#FF6347] ${activeSection === item ? 'text-[#FF6347]' : 'text-white'}`}
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(item);
@@ -81,7 +82,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, setIsMenuOpen, activeSectio
             <a
               key={item}
               href={`#${item}`}
-              className={`text-2xl uppercase tracking-wider font-medium transition-colors hover:text-amber-500 ${activeSection === item ? 'text-amber-500' : 'text-white'}`}
+              className={`text-2xl uppercase tracking-wider font-medium transition-colors hover:text-[#FF6347] ${activeSection === item ? 'text-[#FF6347]' : 'text-white'}`}
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection(item);

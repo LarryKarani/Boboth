@@ -45,7 +45,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   return (
     <div 
       ref={cardRef}
-      className={`bg-gray-900 rounded-lg overflow-hidden group hover:shadow-xl hover:shadow-amber-500/10 transition-all duration-500 opacity-0 ${
+      className={`bg-gray-900 rounded-lg overflow-hidden group hover:shadow-xl hover:shadow-[#FF6347]/10 transition-all duration-500 opacity-0 ${
         index % 2 === 0 ? 'transform-gpu translate-y-8' : 'transform-gpu -translate-y-8'
       }`}
       style={{ 
@@ -61,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-70"></div>
         <div className="absolute bottom-0 left-0 p-6">
-          <span className="text-xs uppercase tracking-wider bg-amber-500 text-black px-3 py-1 rounded-full">
+          <span className="text-xs uppercase tracking-wider bg-[#FF6347] text-white px-3 py-1 rounded-full">
             {project.category}
           </span>
           <h3 className="text-xl font-bold mt-2">{project.title}</h3>
@@ -71,13 +71,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       <div className="p-6">
         <p className="text-gray-300 mb-4">{project.description}</p>
         
-        <div className="mb-4 border-l-2 border-amber-500 pl-4 italic text-gray-400">
+        <div className="mb-4 border-l-2 border-[#FF6347] pl-4 italic text-gray-400">
           "{project.testimonial.length > 120 ? project.testimonial.substring(0, 120) + '...' : project.testimonial}"
         </div>
         
         <div className="flex justify-between items-center">
-          <span className="text-sm text-amber-500">{project.client}</span>
-          <button className="text-amber-500 hover:text-amber-400 transition-colors flex items-center text-sm">
+          <span className="text-sm text-[#FF6347]">{project.client}</span>
+          <button className="text-[#FF6347] hover:text-amber-400 transition-colors flex items-center text-sm">
             View Project <ArrowRight size={16} className="ml-1" />
           </button>
         </div>
