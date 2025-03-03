@@ -3,8 +3,8 @@ import React from 'react';
 import Client1 from '../assets/client1.svg';
 //import Client2 from '../assets/client2.svg';
 import Client3 from '../assets/client3.svg';
-//import Client4 from '../assets/client4.svg';
-//import Client5 from '../assets/client5.svg';
+import Client6 from '../assets/client6.svg';
+import Client7 from '../assets/client7.svg';
 
 const Clients: React.FC = () => {
   return (
@@ -34,6 +34,12 @@ const Clients: React.FC = () => {
           </div>
           <div className="w-full max-w-[200px] p-4 redscale hover:redscale-0 transition-all">
             <img src={Client3} alt="Client 1" className="w-full h-auto" />
+          </div>
+          <div className="w-full max-w-[200px] p-4 redscale hover:redscale-0 transition-all">
+            <img src={Client6} alt="Client 1" className="w-full h-auto" />
+          </div>
+          <div className="w-full max-w-[200px] p-4 redscale hover:redscale-0 transition-all">
+            <img src={Client7} alt="Client 1" className="w-full h-auto" />
           </div>
         </div>
       </div>
